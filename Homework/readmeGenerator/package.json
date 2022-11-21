@@ -1,0 +1,22 @@
+{
+  "name": "readmegenerator",
+  "version": "1.0.0",
+  "description": "Command line application that generates a readme file.",
+  "main": "index.js",
+  "scripts": {
+    "test": "N/A"
+  },
+  "repository": {
+    "type": "git",
+    "url": "readmeGenerator"
+  },
+  "keywords": [
+    "N/A"
+  ],
+  "author": "Pierce Rogg",
+  "license": "MIT",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "inquirer": "^7.3.3"
+  }
+}

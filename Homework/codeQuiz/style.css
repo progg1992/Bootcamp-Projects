@@ -1,0 +1,9 @@
+* {
+    align-items: center;
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+

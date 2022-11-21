@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="card">
+        <div class="card-body">
+            <div class="scores"></div>
+            <div class="timer"></div>
+            <div class="quiz-container">
+                <div id="start-screen">
+                    <h1>Javascript Quiz</h1>
+                    <button id="begin" class="btn btn-primary">Start</button>
+                    <button id="exit" class="btn btn-secondary">Cancel</button>
+                </div>
+                <div id="questions" class="hide text-center">
+                    <h2 id="question-title"></h2>
+                    <div class="choices">
+                        <button id="choiceA" class="btn btn-secondary"></button>
+                        <button id="choiceB" class="btn btn-secondary"></button>
+                        <button id="choiceC" class="btn btn-secondary"></button>
+                        <button id="choiceD" class="btn btn-secondary"></button>
+
+                    </div>
+                </div>
+            </div>
+            <div id="end-screen" class="hide text-center">
+                <h2>All Done!</h2>
+                <form method="POST">
+                    <div class="input-group">
+                    <label for="high-score">High Score</label>
+                    <input type="text" name="score" id="score" placeholder="enter intials and score" />
+                    </div>
+                    <button id="submit" class="btn btn-secondary">Submit</button>
+                </form>
+
+                <div class="card">
+                    <h2>Last Users Score:</h2>
+                    <p><strong>Last Score:</strong> <span id="last-score"></span></p>
+                </div>    
+            </div>
+        </div>    
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
